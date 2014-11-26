@@ -2,7 +2,7 @@
 <!--
     This is a default build file that sits outside of any project folders, but which is imported into the project build
     file like so:
-        <import file="vendor/contao-community-alliance/build-system/ccabs.main.xml"/>
+        <import file="vendor/cboelter/contao-ccabs-custom/ccabs.custom.xml"/>
 
     All relative references in this file, are assumed to be from the base of the project build file.
     If an identically named target in the project build file is also present in this imported file, the one from the
@@ -24,16 +24,16 @@
     <property file="${ccabs.basedir}/build.default.properties" />
 
     <!-- Import the tasks now. -->
-    <import file="tasks/autoloading-validation/task.xml" />
-    <import file="tasks/branch-alias-validation/task.xml" />
-    <import file="tasks/composer-validate/task.xml" />
-    <import file="tasks/pdepend/task.xml" />
-    <import file="tasks/phplint/task.xml" />
-    <import file="tasks/phpcpd/task.xml" />
-    <import file="tasks/phpcs/task.xml" />
-    <import file="tasks/phploc/task.xml" />
-    <import file="tasks/phpmd/task.xml" />
-    <import file="tasks/phpspec/task.xml" />
+    <import file="${ccabs.basedir}/tasks/autoloading-validation/task.xml" />
+    <import file="${ccabs.basedir}/tasks/branch-alias-validation/task.xml" />
+    <import file="${ccabs.basedir}/tasks/composer-validate/task.xml" />
+    <import file="${ccabs.basedir}/tasks/pdepend/task.xml" />
+    <import file="${ccabs.basedir}/tasks/phplint/task.xml" />
+    <import file="${ccabs.basedir}/tasks/phpcpd/task.xml" />
+    <import file="${ccabs.basedir}/tasks/phpcs/task.xml" />
+    <import file="${ccabs.basedir}/tasks/phploc/task.xml" />
+    <import file="${ccabs.basedir}/tasks/phpmd/task.xml" />
+    <import file="${ccabs.basedir}/tasks/phpspec/task.xml" />
 
     <!-- Build targets from here on. -->
     <target
